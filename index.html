@@ -4,57 +4,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <title>STQ S.A. | Especialidades Químicas Industriales en Nicaragua</title>
-    <meta name="description"
-        content="Fabricante líder de especialidades químicas en Nicaragua. Proveemos BIODESMOLDÁN PTM y soluciones químicas técnicas con alto control de calidad para la industria.">
-    <meta name="keywords"
-        content="químicos Nicaragua, STQ S.A., BIODESMOLDÁN PTM, desmoldantes, químicos industriales, control de calidad químico">
+    <title>BIODESMOLDÁN P™ | Especificaciones STQ S.A.</title>
+    <meta name="description" content="Información técnica sobre BIODESMOLDÁN P™ - Desmoldantes">
 
-    <!-- Open Graph (opcional para compartir en redes B2B como LinkedIn) -->
-    <meta property="og:title" content="STQ S.A. - Especialidades Químicas">
-    <meta property="og:description"
-        content="Soluciones químicas técnicas con alto control de calidad para la industria nicaragüense.">
-    <meta property="og:type" content="website">
-
-    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+    <style>
+        .tech-page-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="assets/img/logo_isotipo.svg">
+        .tech-section {
+            margin-bottom: 4rem;
+        }
+
+        .tech-section h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-dark-gray);
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 0.5rem;
+        }
+
+        .tech-section h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-tech-blue);
+            font-size: 20px;
+        }
+
+        .tech-section p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: var(--color-text-main);
+        }
+
+        .tech-section ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .tech-section li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text-main);
+            line-height: 1.6;
+        }
+
+        /* Tablas Técnicas */
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            background-color: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--color-border);
+        }
+
+        .tech-table th {
+            background-color: var(--color-bg-alt);
+            color: var(--color-dark-gray);
+            text-align: left;
+            padding: 16px 24px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            border-bottom: 2px solid var(--color-tech-blue);
+        }
+
+        .tech-table td {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-main);
+            vertical-align: middle;
+        }
+
+        .tech-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Grid para Lista de Requisitos */
+        .req-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-bottom: 2rem;
+        }
+
+        .req-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: var(--color-bg-alt);
+            padding: 16px;
+            border-radius: 6px;
+            border-left: 4px solid var(--color-tech-blue);
+        }
+
+        .req-item svg {
+            flex-shrink: 0;
+            color: var(--color-tech-blue);
+            margin-top: 2px;
+        }
+
+        /* Contenedor de Imagen */
+        .img-placeholder {
+            width: 100%;
+            height: 350px;
+            background-color: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .img-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- ================= HEADER ================= -->
     <header class="header js-header" role="banner">
         <div class="container">
             <nav class="nav" aria-label="Navegación principal">
-                <!-- Logotipo Brand -->
-                <a href="#" class="nav__brand-logo" aria-label="Volver a página principal de STQ">
-                    <img src="assets/img/logo_isotipo.svg" alt="Logotipo STQ S.A." width="128" height="128">
+                <a href="index.html" class="nav__brand-logo" aria-label="Volver a página principal de STQ">
+                    <img src="assets/img/logo_isotipo.svg" alt="Logotipo STQ S.A." width="128" height="128"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\'%3E%3Cpath d=\'M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18\'/%3E%3C/svg%3E'">
                 </a>
-
-                <!-- Navegación Desktop -->
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#inicio">Inicio</a></li>
-                    <li class="nav__item"><a href="#nosotros">Quiénes Somos</a></li>
-                    <li class="nav__item"><a href="#productos">Productos</a></li>
-                    <li class="nav__item"><a href="#calidad">Calidad</a></li>
-                    <li class="nav__item"><a
-                            href="https://wa.me/50583258432?text=Hola,%20deseo%20información%20técnica%20sobre%20sus%20productos%20industriales."
-                            target="_blank" rel="noopener noreferrer" class="btn btn--primary"
-                            style="min-height:36px; padding: 8px 20px; color: white;">Contactar</a></li>
-                </ul>
-
-                <!-- Mobile Menu Toggle -->
+                <!--<ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#inicio">Inicio</a></li>
+                    <li class="nav__item"><a href="index.html#productos">Volver a Productos</a></li>
+                </ul>-->
                 <button class="nav__toggle js-menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
                     aria-label="Abrir menú de navegación">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -66,336 +162,301 @@
                 </button>
             </nav>
         </div>
-
-        <!-- Menú Móvil -->
         <div id="mobile-menu" class="mobile-menu js-mobile-menu">
-            <ul class="mobile-menu__list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Quiénes Somos</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#calidad">Calidad</a></li>
-                <li><a href="https://wa.me/50583258432?text=Hola,%20deseo%20información%20técnica%20sobre%20sus%20productos%20industriales."
-                        target="_blank" rel="noopener noreferrer" class="btn btn--primary"
-                        style="width: 100%; margin-top: 16px; color: white;">Contactar</a>
-                </li>
-            </ul>
+            <!--<ul class="mobile-menu__list">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#productos">Volver a Productos</a></li>
+            </ul>-->
         </div>
     </header>
 
-    <main id="main-content">
-        <!-- ================= HERO ================= -->
-        <section id="inicio" class="hero section reveal">
-            <div class="container hero__content">
-                <span class="hero__subtitle">Estabilidad & Control de Procesos</span>
-                <h1>Especialidades Químicas Industriales de Alto Rendimiento</h1>
-                <p class="text-large">Desarrollamos soluciones químicas técnicas con estricto control de calidad,
-                    asegurando la continuidad y eficiencia de las operaciones industriales en Nicaragua.</p>
-                <div class="btn-group btn-group--center">
-                    <a href="#productos" class="btn btn--primary">Ver Línea de Productos</a>
-                    <a href="https://wa.me/50583258432?text=Hola,%20quisiera%20solicitar%20asesoría%20técnica."
-                        target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Contactar</a>
-                </div>
-            </div>
-        </section>
+    <main id="main-content" style="padding-top: 100px;">
+        <section class="section">
+            <div class="container tech-page-container">
+                <h1 style="margin-bottom: 2rem;">Desmoldantes de Alto Rendimiento: BIODESMOLDÁN™</h1>
 
-        <!-- ================= QUIÉNES SOMOS ================= -->
-        <section id=" nosotros" class="section section--bg-alt reveal">
-            <div class="container">
-                <div class="grid about__grid">
-                    <div class="grid-col-12 grid-col-6-tablet">
-                        <h2 class="section-header">Solidez y Responsabilidad corporativa</h2>
-                        <p>STQ S.A. es una empresa dedicada a la manufactura y formulación de especialidades
-                            químicas. Nos regimos por principios de excelencia técnica y estricto
-                            cumplimiento
-                            normativo, garantizando a la industria nicaragüense productos estables,
-                            eficientes y
-                            repetibles logísticamente eficaces.</p>
-                        <ul style="margin-top:24px; display:flex; flex-direction:column; gap:16px;">
-                            <li style="display:flex; align-items:center; gap:12px;">
-                                <svg width="24" height="24" style="color:var(--color-primary);" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                    <polyline points="22 4 12 14.01 9 11.01" />
-                                </svg>
-                                <span>Fabricación técnica estandarizada</span>
-                            </li>
-                            <li style="display:flex; align-items:center; gap:12px;">
-                                <svg width="24" height="24" style="color:var(--color-primary);" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                    <polyline points="22 4 12 14.01 9 11.01" />
-                                </svg>
-                                <span>Capacidad operativa y de volumen</span>
-                            </li>
-                            <li style="display:flex; align-items:center; gap:12px;">
-                                <svg width="24" height="24" style="color:var(--color-primary);" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                    <polyline points="22 4 12 14.01 9 11.01" />
-                                </svg>
-                                <span>Abastecimiento continuo B2B</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid-col-12 grid-col-6-tablet"
-                        style="display: flex; align-items: center; justify-content: center;">
-                        <img src="assets/img/PRODUCTOS/DESMOLDANTES.png" alt="Equipos y producto STQ S.A."
-                            style="width: 100%; height: auto; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);">
+                <div class="tech-section">
+                    <p>Los desmoldantes para concreto de alta calidad son indispensables cuando se trata de la
+                        calidad de las superficies de los preformados. Basándonos en nuestra experiencias, hemos
+                        desarrollado nuestro producto de alto rendimiento <strong>BIODESMOLDÁN™</strong> en estrecha
+                        cooperación con nuestros clientes. Hoy en día, estos desmoldantes se utilizan con éxito
+                        tanto en plantas de prefabricados como en ingeniería estructural y civil.</p>
+
+                    <div class="img-placeholder">
+                        <img src="assets/img/PRODUCTOS/BIODESMOLDAN_APLICACION.png">
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ================= PRODUCTO ESTRELLA ================= -->
-        <section class="section featured-product reveal">
-            <div class="container">
-                <div class="grid featured-product__grid">
+                <div class="tech-section">
+                    <h2>Requisitos para los desmoldantes modernos</h2>
+                    <div class="req-grid">
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>A. Fácil separación entre el concreto y el molde</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>B. Moldes limpios</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>C. Protección contra la corrosión</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>D. Seguridad y NO toxicidad para el usuario</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>E. Protección para el medio ambiente</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>F. Aplicación Universal</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>G. Economía</span>
+                        </div>
+                    </div>
 
-                    <div class="grid-col-12 grid-col-7-tablet featured-product__content">
-                        <span class="hero__subtitle">PRODUCTO NUEVO</span>
-                        <h2>BIODESMOLDANTES</h2>
-                        <p>Desmoldante industrial especializado, formulado para la producción de concreto. Desarrollado
-                            con tecnología equilibrada para maximizar la liberación de formaletas, minimizar residuos en
-                            superficie y mejorar el acabado arquitectónico.</p>
-                        <p class="text-small" style="color: var(--color-text-main); margin-bottom: 24px;">Disponible a
-                            granel y estañones con formulación estable garantizada.</p>
-                        <a href="productos/biodesmoldantes.html" class="btn btn--primary">Ver Especificaciones
-                            Técnicas</a>
+                    <p>El hecho de que podamos ofrecer productos alternativos y eco amigables como desmoldantes para
+                        todas las aplicaciones, demuestra y prueba
+                        claramente que la calidad, la eficiencia y la conciencia ambiental pueden conciliarse.</p>
+                    <p>Nuestros productos proponen una evolución y mejoría constante a través de nuestra estrecha
+                        cooperación con nuestros clientes y usuarios finales.</p>
+                </div>
+
+                <div class="tech-section">
+                    <h2>Composición de los desmoldantes para concreto</h2>
+                    <p>Los desmoldantes para concreto consisten en un fluido base en el que se disuelven los
+                        aditivos requeridos. Este fluido base puede ser aceite mineral, ésteres de aceite vegetal y en
+                        el caso de las emulsiones, agua.</p>
+                    <p>Nuestra tecnología Biodesmoldan™ utiliza ácidos grasos y ésteres como sustancia separadora. Los
+                        ácidos grasos reaccionan químicamente con los cationes del agua del concreto para producir
+                        jabones metálicos. Estos jabones metálicos forman un punto de ruptura predeterminado, exacto
+                        entre el concreto y el molde después del endurecimiento de la mezcla.</p>
+                    <p>Los ésteres se saponifican para formar ácidos grasos y alcohol debido
+                        a las propiedades de la mezcla de concreto, altamente alcalino (valor de pH mayor a 12). Los
+                        ácidos grasos reaccionan, como se ha
+                        descrito, con los cationes en el agua del concreto, mientras que el alcohol se integra en la
+                        matriz del cemento.</p>
+                    <p>Además, el Biodesmoldan por su naturaleza química minimiza la formación de
+                        poros y cavidades por retracción, y brinda protección eficaz contra la corrosión
+                        para moldes metálicos.</p>
+
+                    <h3>Tipos de desmoldantes</h3>
+                    <div
+                        style="overflow-x: auto; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);">
+                        <table class="tech-table" style="min-width: 768px; margin-bottom: 0; box-shadow: none;">
+                            <thead>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Grupo 1 – A base de aceite mineral, en parte con disolventes</th>
+                                    <th>Grupo 2 – Emulsiones</th>
+                                    <th>Grupo 3 – Base aceite de éster</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Sustancia portadora</strong></td>
+                                    <td>Aceites minerales / parcialmente con solventes (aprox. 80 a 95%)</td>
+                                    <td>Agua (aprox. 65 a 85%)</td>
+                                    <td>Ésteres de origen vegetal (aprox. 95 a 99%)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sustancia separadora química</strong></td>
+                                    <td>Parafinas líquidas (aprox. 2 a 15%)</td>
+                                    <td>Ácidos grasos y ésteres</td>
+                                    <td>Ésteres de origen vegetal (aprox. 95 a 99%)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aditivos para minimizar poros y cavidades</strong></td>
+                                    <td>Sí</td>
+                                    <td>Sí</td>
+                                    <td>Sí</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aditivos de protección anticorrosiva</strong></td>
+                                    <td>Sí</td>
+                                    <td>Sí</td>
+                                    <td>Sí</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Otros aditivos</strong></td>
+                                    <td>–</td>
+                                    <td>Emulsionantes</td>
+                                    <td>–</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ================= LÍNEA DE PRODUCTOS ================= -->
-        <section id="productos" class="section section--bg-alt products">
-            <div class="container">
-                <div class="text-center section-header reveal">
-                    <h2>Línea de Productos Industriales</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">Nuestras especialidades atienden sectores críticos de
-                        la manufactura e infraestructura con soluciones reproducibles bajo estrictos estándares.</p>
+                <div class="tech-section">
+                    <h2>Tipos de desmoldantes para concreto y sus aplicaciones</h2>
+
+                    <!--<h3>Desmoldantes a base de aceite mineral</h3>
+                    <p>Los desmoldantes para concreto a base de aceites minerales, con y sin disolventes, siguen
+                        siendo ampliamente utilizados en plantas de prefabricados y en ingeniería estructural y civil.
+                        Estos productos son de aplicación universal. Las plantas de prefabricados suelen utilizar
+                        productos a base de disolventes para moldes estándar a fin de cumplir con las altas
+                        exigencias de calidad de las superficies de concreto (hasta concreto arquitectónico expuesto) y
+                        la limpieza del encofrado. Los productos que contienen aceite mineral también se utilizan a
+                        menudo como de desmolde inmediato.</p>
+
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th>Beneficios principales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Temperatura de aplicación hasta 130 °C</td>
+                            </tr>
+                            <tr>
+                                <td>Reducción significativa de poros y cavidades por retracción</td>
+                            </tr>
+                            <tr>
+                                <td>Superficies de concreto limpias y homogéneas</td>
+                            </tr>
+                            <tr>
+                                <td>Protección efectiva contra la corrosión</td>
+                            </tr>
+                            <tr>
+                                <td>No afecta la adherencia de yesos, adhesivos ni pinturas</td>
+                            </tr>
+                            <tr>
+                                <td>Aplicable en superficies horizontales y verticales</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="img-placeholder">
+                        <img src="assets\img\PRODUCTOS\BIODESMOLDAN.png">
+                    </div>-->
+
+                    <h3>ACUODESMOLDÁN™</h3>
+                    <p>Por razones de salud y seguridad en el trabajo e higiene ambiental, los productos a base de agua
+                        se utilizan cada vez más en plantas de producción estacionarias. Las emulsiones que se utilizan
+                        como desmoldantes representan la última generación de productos en la línea
+                        ACUODESMOLDAN™. Las emulsiones se pueden utilizar en plantas de prefabricados en todos los
+                        moldes estándar, como los de acero, los recubiertos de plástico, etc. En comparación con los
+                        productos a base de disolventes, las emulsiones de BIODESMOLDAN tienen ventajas distintivas
+                        gracias a su fácil manejo y aplicación.</p>
+                    <p>Son productos no inflamables y prácticamente inodoros durante la pulverización. Sus efectos en
+                        términos de tecnología del concreto corresponden en la mayoría de los casos a los de los
+                        desmoldantes con disolventes. De esta forma, el usuario obtiene superficies de concreto expuesto
+                        impecables, libres de poros, cavidades y manchas, al tiempo que el molde se limpia
+                        fácilmente y sin mayor esfuerzo. Hemos logrado integrar una protección contra la corrosión
+                        demostrablemente mayor en algunos productos para su utilización en moldes de acero oxidable.
+                    </p>
+
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th>Beneficios principales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Temperatura de aplicación hasta 70 °C (temperatura del molde)</td>
+                            </tr>
+                            <tr>
+                                <td>Previene en gran medida la formación de poros y cavidades</td>
+                            </tr>
+                            <tr>
+                                <td>Proporciona superficies limpias y uniformes</td>
+                            </tr>
+                            <tr>
+                                <td>Contiene una protección contra la corrosión muy eficaz para moldes de acero</td>
+                            </tr>
+                            <tr>
+                                <td>No dificulta la posterior adherencia de yesos, adhesivos ni pinturas</td>
+                            </tr>
+                            <tr>
+                                <td>Aplicable en superficies horizontales y verticales</td>
+                            </tr>
+                            <tr>
+                                <td>No inflamable y casi inodoro durante la aspersión</td>
+                            </tr>
+                            <tr>
+                                <td>Fácilmente biodegradable e inocuo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="img-placeholder">
+                        <img src="assets\img\PRODUCTOS\ACUODESMOLDAN.png">
+                    </div>
+
+                    <h3>Agente desmoldante a base de ésteres de origen vegetal</h3>
+                    <p>Los desmoldantes biogénicos a base de ésteres de aceites vegetales adquieren cada vez más
+                        importancia por razones medioambientales y se utilizan cada vez con mayor frecuencia en la
+                        producción general de elementos prefabricados de concreto.</p>
+                    <p>Estos productos son especialmente útiles en la producción de tuberías, protección de mezcladoras,
+                        durmientes de concreto o piedras en L, así como para el desmolde inmediato.</p>
+                    <p>Biodesmoldan™ no solo es adecuado para aplicaciones en áreas protegidas y/o zonas restringidas
+                        por cuido del manto freático (zonas de protección del agua y su medioambiente), sino que también
+                        se puede utilizar en muchas otras áreas.</p>
+
+                    <div class="img-placeholder">
+                        <img src="assets\img\PRODUCTOS\BIODESMOLDAN.png">
+                    </div>
                 </div>
 
-                <div class="products__list">
-
-                    <!-- Modificadores Reológicos -->
-                    <article class="card reveal reveal--delay-2">
-                        <div class="card__img-container">
-                            <img src="assets\img\PRODUCTOS\SUPER_CAST_2000.png" alt="Modificadores Reológicos"
-                                class="card__image" loading="lazy">
-                        </div>
-                        <h3 class="card__title">Modificadores Reológicos</h3>
-
-                        <div class="product-group">
-                            <h4 class="product-group__title">Plastificantes:</h4>
-                            <ul class="product-group__list">
-                                <li><a href="productos/super-cast-2000.html">Super Cast 2000</a></li>
-                                <li><a href="productos/super-cast-v.html">Super Cast V</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="product-group">
-                            <h4 class="product-group__title">Super Plastificantes:</h4>
-                            <ul class="product-group__list">
-                                <li><a href="productos/ultra-cast-n50.html">Ultra Cast N50</a></li>
-                                <li><a href="productos/ultra-cast-pv.html">Ultra Cast PV</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="product-group">
-                            <h4 class="product-group__title">Acelerantes:</h4>
-                            <ul class="product-group__list">
-                                <li><a href="productos/super-fast-ac-152.html">Super Fast AC 152</a></li>
-                            </ul>
-                        </div>
-
-                        <div style="margin-top: auto; padding-top: 24px;">
-                            <a href="https://wa.me/50583258432?text=Hola,%20deseo%20consultar%20especificaciones%20sobre%20Modificadores%20Reológicos."
-                                target="_blank" rel="noopener noreferrer" class="btn btn--technical">Consultar
-                                Especificaciones →</a>
-                        </div>
-                    </article>
-
-
-                    <!-- Desmoldantes -->
-
-                    <article class="card reveal reveal--delay-2">
-                        <div class="card__img-container">
-                            <img src="assets\img\PRODUCTOS\ACUODESMOLDAN.png" alt="Línea de Desmoldantes STQ"
-                                class="card__image" loading="lazy">
-                        </div>
-                        <h3 class="card__title">Desmoldantes</h3>
-
-                        <ul class="product-group__list">
-                            <li><a href="productos/biodesmoldan.html">BIODESMOLDÁN</a></li>
-                            <li><a href="productos/biodesmoldan-ve.html">BIODESMOLDÁN VE</a></li>
-                            <li><a href="productos/acuodesmoldan.html">ACUODESMOLDÁN</a></li>
-                        </ul>
-
-                        <div style="margin-top: auto; padding-top: 24px;">
-                            <a href="https://wa.me/50583258432?text=Hola,%20deseo%20consultar%20especificaciones%20sobre%20Desmoldantes."
-                                target="_blank" rel="noopener noreferrer" class="btn btn--technical">Consultar
-                                Especificaciones →</a>
-                        </div>
-                    </article>
-
-                    <!-- Curador de Concreto -->
-                    <article class="card reveal reveal--delay-2">
-                        <div class="card__img-container">
-                            <img src="assets\img\PRODUCTOS\SUPER_CAST_2000.png" alt="Curador de Concreto"
-                                class="card__image" loading="lazy">
-                        </div>
-                        <h3 class="card__title">Curador de Concreto</h3>
-
-                        <ul class="product-group__list">
-                            <li><a href="productos/supercure-2000.html">SUPERCURE 2000</a></li>
-                        </ul>
-
-                        <div style="margin-top: auto; padding-top: 24px;">
-                            <a href="https://wa.me/50583258432?text=Hola,%20deseo%20consultar%20especificaciones%20sobre%20Curador%20de%20Concreto."
-                                target="_blank" rel="noopener noreferrer" class="btn btn--technical">Consultar
-                                Especificaciones →</a>
-                        </div>
-                    </article>
-
-                    <!-- Removedor de Concreto -->
-                    <article class="card reveal reveal--delay-2">
-                        <div class="card__img-container">
-                            <img src="assets\img\PRODUCTOS\SURFACID_PRO.png" alt="Removedor de Concreto"
-                                class="card__image" loading="lazy">
-                        </div>
-                        <h3 class="card__title">Removedor de Concreto</h3>
-
-                        <ul class="product-group__list">
-                            <li><a href="productos/surfacid.html">SURFACID</a></li>
-                        </ul>
-
-                        <div style="margin-top: auto; padding-top: 24px;">
-                            <a href="https://wa.me/50583258432?text=Hola,%20deseo%20consultar%20especificaciones%20sobre%20Removedor%20de%20Concreto."
-                                target="_blank" rel="noopener noreferrer" class="btn btn--technical">Consultar
-                                Especificaciones →</a>
-                        </div>
-                    </article>
-
-                    <!-- Aditivo Adherente -->
-                    <article class="card reveal reveal--delay-2">
-                        <div class="card__img-container">
-                            <img src="assets\img\PRODUCTOS\ADHECRET.png" alt="Aditivo Adherente" class="card__image"
-                                loading="lazy">
-                        </div>
-                        <h3 class="card__title">Aditivo Adherente / Resanador</h3>
-
-                        <ul class="product-group__list">
-                            <li><a href="productos/adhecret.html">ADHECRET</a></li>
-                        </ul>
-
-                        <div style="margin-top: auto; padding-top: 24px;">
-                            <a href="https://wa.me/50583258432?text=Hola,%20deseo%20consultar%20especificaciones%20sobre%20Aditivos%20Adherentes/Resanadores."
-                                target="_blank" rel="noopener noreferrer" class="btn btn--technical">Consultar
-                                Especificaciones →</a>
-                        </div>
-                    </article>
-
-                    <!-- Impermeabilizante -->
-                    <article class="card reveal reveal--delay-3">
-                        <div class="card__img-placeholder">
-                            <span>[Imagen Impermeabilizante]</span>
-                        </div>
-                        <h3 class="card__title">Impermeabilizante / Sellador</h3>
-
-                        <ul class="product-group__list">
-                            <li><a href="productos/surfadry-eco.html">SURFADRY ECO</a></li>
-                        </ul>
-
-                        <div style="margin-top: auto; padding-top: 24px;">
-                            <a href="https://wa.me/50583258432?text=Hola,%20deseo%20consultar%20especificaciones%20sobre%20Impermeabilizantes/Selladores."
-                                target="_blank" rel="noopener noreferrer" class="btn btn--technical">Consultar
-                                Especificaciones →</a>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CONTROL DE CALIDAD ================= -->
-        <section id="calidad" class="section text-center reveal">
-            <div class="container" style="max-width: 800px;">
-                <span class="hero__subtitle" style="color: var(--color-support-green);">Estándares de Calidad</span>
-                <h2>Garantía de Resultados y Control Operativo</h2>
-                <p>Nuestro laboratorio ejecuta protocolos de prueba automatizados en cada lote de producción.
-                    Verificamos densidades, viscosidades, pH y punto de inflamación para asegurar que el uso final sea
-                    seguro, congruente y eficaz para su instalación.</p>
-            </div>
-        </section>
-
-        <!-- ================= COBERTURA NACIONAL (CTA) ================= -->
-        <section class="section cta-final reveal">
-            <div class="container" style="max-width: 800px; text-align: center;">
-                <div style="margin-bottom: 24px;">
-                    <svg width="48" height="48" style="color:var(--color-primary);" fill="none" stroke="currentColor"
-                        stroke-width="1.5">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                </div>
-                <h2 style="color: var(--color-white)">Cobertura Industrial en Toda Nicaragua</h2>
-                <p style="color: #A0AAB2; margin-bottom: 32px;">Infraestructura logística sólida preparada para el
-                    volumen y la periodicidad exigida por corporaciones nacionales y regionales.</p>
-                <div id="contacto">
-                    <!-- WhatsApp Direct Link -->
-                    <a href="https://wa.me/50583258432?text=Hola,%20deseo%20información%20técnica%20sobre%20sus%20productos%20industriales."
-                        target="_blank" rel="noopener noreferrer" class="btn btn--primary"
-                        aria-label="Contactar a ventas por WhatsApp">
-                        Contactar a Operaciones de Ventas
+                <div
+                    style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #E2E8F0; display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="https://wa.me/50583258432?text=Hola,%20deseo%20más%20información%20técnica%20o%20cotizar%20el%20producto%20BIODESMOLDÁN P™."
+                        target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                        Solicitar Cotización / Asesoría
                     </a>
+                    <!--<a href="index.html#productos" class="btn btn--secondary">
+                        Volver al Catálogo
+                    </a>-->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" style="margin-top: 4rem;">
         <div class="container">
             <div class="footer__grid">
                 <div>
                     <h3
                         style="color: var(--color-white); font-family: var(--font-heading); font-size: 20px; display:flex; align-items:center; gap:8px;">
-                        <img src="assets/img/logo_isotipo.svg" alt="Logotipo STQ,S.A." width="48" height="48"
-                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\'%3E%3Cpath d=\'M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18\'/%3E%3C/svg%3E'">
-                        STQ, S.A.
+                        STQ S.A.
                     </h3>
                     <p style="font-size: 14px;">Fabricante de especialidades químicas corporativas e industriales con
                         sede en Nicaragua.</p>
                 </div>
-                <div>
-                    <h3>Navegación</h3>
-                    <ul class="footer__links">
-                        <li><a href="#inicio">Términos Comerciales</a></li>
-                        <li><a href="#nosotros">Perfil Corporativo</a></li>
-                        <li><a href="#productos">Catálogo Técnico</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contacto</h3>
-                    <ul class="footer__links" style="font-size: 14px;">
-                        <li style="display:flex; gap:8px;"><strong>Tel.:</strong> (505) 2255-2763</li>
-                        <li style="display:flex; gap:8px;"><strong>Cel.:</strong> (505) 8325-8432</li>
-                        <li style="display:flex; gap:8px;"><strong>Email:</strong> <a
-                                href="mailto:stqventas@stqsa.com">stqventas@stqsa.com</a></li>
-                        <li style="display:flex; gap:8px; align-items: flex-start;"><strong>Planta:</strong> <span
-                                style="line-height:1.4;">Km 13 carretera Managua-Masaya, 2 Km al Este, de las “4
-                                Esquinas” 1 c. al Este, 2 c. al Norte, 100Vrs. Al Este. Finca “El Plátano”, comarca
-                                Buenos Aires, Ticuantepe, Managua.</span></li>
-                    </ul>
-                </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 STQ, S.A. Todos los derechos reservados. | Sistema de Información Técnico Web.</p>
+                <p>&copy; 2026 STQ S.A. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 
