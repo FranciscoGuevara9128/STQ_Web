@@ -18,7 +18,7 @@
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
     <style>
         .tech-page-container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
@@ -119,14 +119,10 @@
         .img-placeholder {
             width: 100%;
             height: 350px;
-            background-color: var(--color-white);
-            border: 1px solid var(--color-border);
-            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 2rem 0;
-            padding: 24px;
             box-sizing: border-box;
         }
 
@@ -135,6 +131,87 @@
             max-height: 100%;
             object-fit: contain;
             border-radius: 4px;
+        }
+
+        /* Carrusel Responsivo CSS */
+        .carousel-wrapper {
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            background: var(--color-bg-alt);
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+        }
+
+        .carousel-track {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .carousel-track::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .carousel-track::-webkit-scrollbar-track {
+            background: #E5E7E9;
+        }
+
+        .carousel-track::-webkit-scrollbar-thumb {
+            background: var(--color-tech-blue);
+            border-radius: 4px;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            height: 450px;
+            scroll-snap-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-bg-alt);
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Ajustes Responsivos para la Página */
+        @media (max-width: 768px) {
+            .tech-page-container {
+                padding: 0 16px;
+            }
+
+            .tech-section h2 {
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .tech-section h3 {
+                font-size: 1.25rem;
+            }
+
+            h1 {
+                font-size: 1.8rem !important;
+            }
+
+            .tech-table th,
+            .tech-table td {
+                padding: 12px 14px;
+                font-size: 0.9rem;
+            }
+
+            .carousel-slide {
+                height: 300px;
+            }
+
+            .req-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -177,7 +254,7 @@
 
                 <div class="tech-section">
                     <p>Los desmoldantes para concreto de alta calidad son indispensables cuando se trata de la
-                        calidad de las superficies de los preformados. Basándonos en nuestra experiencias, hemos
+                        calidad de las superficies de los preformados. Basándonos en nuestra experiencia, hemos
                         desarrollado nuestro producto de alto rendimiento <strong>BIODESMOLDÁN™</strong> en estrecha
                         cooperación con nuestros clientes. Hoy en día, estos desmoldantes se utilizan con éxito
                         tanto en plantas de prefabricados como en ingeniería estructural y civil.</p>
@@ -195,53 +272,76 @@
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>A. Fácil separación entre el concreto y el molde</span>
+                            <span>Fácil separación entre el concreto y el molde</span>
                         </div>
                         <div class="req-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>B. Moldes limpios</span>
+                            <span>Moldes limpios</span>
                         </div>
                         <div class="req-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>C. Protección contra la corrosión</span>
+                            <span>Protección contra la corrosión</span>
                         </div>
                         <div class="req-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>D. Seguridad y NO toxicidad para el usuario</span>
+                            <span>Seguridad y NO toxicidad para el usuario</span>
                         </div>
                         <div class="req-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>E. Protección para el medio ambiente</span>
+                            <span>Protección para el medio ambiente</span>
                         </div>
                         <div class="req-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>F. Aplicación Universal</span>
+                            <span>Aplicación Universal</span>
                         </div>
                         <div class="req-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>G. Economía</span>
+                            <span>Economía</span>
+                        </div>
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Superficies de concreto sin poros ni burbujas</span>
+                        </div>
+
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Acabados claros y sin decoloración</span>
+                        </div>
+
+                        <div class="req-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Sustentabilidad</span>
                         </div>
                     </div>
 
-                    <p>El hecho de que podamos ofrecer productos alternativos y eco amigables como desmoldantes para
+                    <p>El hecho de que podamos ofrecer productos alternativos y ecoamigables como desmoldantes para
                         todas las aplicaciones, demuestra y prueba
                         claramente que la calidad, la eficiencia y la conciencia ambiental pueden conciliarse.</p>
                     <p>Nuestros productos proponen una evolución y mejoría constante a través de nuestra estrecha
@@ -253,7 +353,7 @@
                     <p>Los desmoldantes para concreto consisten en un fluido base en el que se disuelven los
                         aditivos requeridos. Este fluido base puede ser aceite mineral, ésteres de aceite vegetal y en
                         el caso de las emulsiones, agua.</p>
-                    <p>Nuestra tecnología Biodesmoldan™ utiliza ácidos grasos y ésteres como sustancia separadora. Los
+                    <p>Nuestra tecnología Biodesmoldán™ utiliza ácidos grasos y ésteres como sustancia separadora. Los
                         ácidos grasos reaccionan químicamente con los cationes del agua del concreto para producir
                         jabones metálicos. Estos jabones metálicos forman un punto de ruptura predeterminado, exacto
                         entre el concreto y el molde después del endurecimiento de la mezcla.</p>
@@ -262,7 +362,7 @@
                         ácidos grasos reaccionan, como se ha
                         descrito, con los cationes en el agua del concreto, mientras que el alcohol se integra en la
                         matriz del cemento.</p>
-                    <p>Además, el Biodesmoldan por su naturaleza química minimiza la formación de
+                    <p>Además, el Biodesmoldán por su naturaleza química minimiza la formación de
                         poros y cavidades por retracción, y brinda protección eficaz contra la corrosión
                         para moldes metálicos.</p>
 
@@ -306,12 +406,8 @@
                                 <tr>
                                     <td><strong>Otros aditivos</strong></td>
                                     <td>–</td>
-<<<<<<< HEAD
                                     <td>Emulsionantes</td>
-=======
-                                    <td>emulsionantes</td>
->>>>>>> 32a06417d72d3fd930bc5472420bad8c259d26e3
-                                    <td>–</td>
+                                    <td>Emulsionantes</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -320,6 +416,48 @@
 
                 <div class="tech-section">
                     <h2>Tipos de desmoldantes para concreto y sus aplicaciones</h2>
+
+                    <h3>BIODESMOLDÁN™: Agente desmoldante a base de ésteres de origen vegetal</h3>
+                    <p>Los desmoldantes biogénicos a base de ésteres de aceites vegetales adquieren cada vez más
+                        importancia por razones medioambientales y se utilizan cada vez con mayor frecuencia en la
+                        producción general de elementos prefabricados de concreto.</p>
+                    <p>Estos productos son especialmente útiles en la producción de tuberías, protección de mezcladoras,
+                        durmientes de concreto o piedras en L, así como para el desmolde inmediato.</p>
+                    <p>Biodesmoldán™ no solo es adecuado para aplicaciones en áreas protegidas y/o zonas restringidas
+                        por cuido del manto freático (zonas de protección del agua y su medioambiente), sino que también
+                        se puede utilizar en muchas otras áreas.</p>
+
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th>Beneficios principales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Temperatura de aplicación hasta 130 °C</td>
+                            </tr>
+                            <tr>
+                                <td>Reducción significativa de poros y cavidades por retracción</td>
+                            </tr>
+                            <tr>
+                                <td>Superficies de concreto limpias y homogéneas</td>
+                            </tr>
+                            <tr>
+                                <td>Protección efectiva contra la corrosión</td>
+                            </tr>
+                            <tr>
+                                <td>No afecta la adherencia de yesos, adhesivos ni pinturas</td>
+                            </tr>
+                            <tr>
+                                <td>Aplicable en superficies horizontales y verticales</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="img-placeholder">
+                        <img src="assets\img\PRODUCTOS\BIODESMOLDAN.png">
+                    </div>
 
                     <!--<h3>Desmoldantes a base de aceite mineral</h3>
                     <p>Los desmoldantes para concreto a base de aceites minerales, con y sin disolventes, siguen
@@ -368,7 +506,7 @@
                         como desmoldantes representan la última generación de productos en la línea
                         ACUODESMOLDAN™. Las emulsiones se pueden utilizar en plantas de prefabricados en todos los
                         moldes estándar, como los de acero, los recubiertos de plástico, etc. En comparación con los
-                        productos a base de disolventes, las emulsiones de BIODESMOLDAN tienen ventajas distintivas
+                        productos a base de disolventes, las emulsiones de BIODESMOLDÁN tienen ventajas distintivas
                         gracias a su fácil manejo y aplicación.</p>
                     <p>Son productos no inflamables y prácticamente inodoros durante la pulverización. Sus efectos en
                         términos de tecnología del concreto corresponden en la mayoría de los casos a los de los
@@ -415,18 +553,55 @@
                         <img src="assets\img\PRODUCTOS\ACUODESMOLDAN.png">
                     </div>
 
-                    <h3>Agente desmoldante a base de ésteres de origen vegetal</h3>
-                    <p>Los desmoldantes biogénicos a base de ésteres de aceites vegetales adquieren cada vez más
-                        importancia por razones medioambientales y se utilizan cada vez con mayor frecuencia en la
-                        producción general de elementos prefabricados de concreto.</p>
-                    <p>Estos productos son especialmente útiles en la producción de tuberías, protección de mezcladoras,
-                        durmientes de concreto o piedras en L, así como para el desmolde inmediato.</p>
-                    <p>Biodesmoldan™ no solo es adecuado para aplicaciones en áreas protegidas y/o zonas restringidas
-                        por cuido del manto freático (zonas de protección del agua y su medioambiente), sino que también
-                        se puede utilizar en muchas otras áreas.</p>
+                    <h3>BIODESMOLDÁN VE™</h3>
+                    <p>BIODESMOLDÁN VE™ es un agente desmoldante biogénico formulado a base de ésteres de origen
+                        vegetal, especialmente desarrollado para aplicaciones en elementos estructurales de gran tamaño.
+                        Su formulación incorpora una viscosidad optimizada, que permite una mayor adherencia sobre
+                        superficies verticales e inclinadas, garantizando la formación de una película uniforme y
+                        estable sobre el molde.</p>
+                    <p>Esta característica reduce el escurrimiento del producto previo al vaciado del concreto,
+                        asegurando un desempeño eficiente en condiciones donde se requiere mayor permanencia del
+                        desmoldante. Es ideal para la fabricación de vigas, elementos pretensados, puentes y otras
+                        estructuras prefabricadas de gran volumen.
+                    </p>
+                    <p>Además, mantiene las ventajas medioambientales propias de los desmoldantes de origen vegetal,
+                        siendo apto para su uso en entornos donde se requiere minimizar el impacto ambiental sin
+                        comprometer la calidad del acabado superficial del concreto.
+                    </p>
 
                     <div class="img-placeholder">
-                        <img src="assets\img\PRODUCTOS\BIODESMOLDAN.png">
+                        <img src="assets/img/PRODUCTOS/BIODESMOLDAN_VE.png">
+                    </div>
+
+                </div>
+
+                <div class="tech-section">
+                    <h2>Resultados en Obra</h2>
+                    <p>Estos son algunos de los acabados y superficies obtenidas mediante el uso de nuestra línea
+                        BIODESMOLDÁN™ en proyectos reales.</p>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_1.png"
+                                    alt="Resultados en obra 1" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_2.png"
+                                    alt="Resultados en obra 2" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_3.png"
+                                    alt="Resultados en obra 3" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_4.png"
+                                    alt="Resultados en obra 4" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_5.png"
+                                    alt="Resultados en obra 5" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_6.png"
+                                    alt="Resultados en obra 6" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_7.png"
+                                    alt="Resultados en obra 7" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_8.png"
+                                    alt="Resultados en obra 8" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_9.png"
+                                    alt="Resultados en obra 9" loading="lazy"></div>
+                            <div class="carousel-slide"><img src="assets/img/PRODUCTOS/resultados_10.png"
+                                    alt="Resultados en obra 10" loading="lazy"></div>
+                        </div>
                     </div>
                 </div>
 
