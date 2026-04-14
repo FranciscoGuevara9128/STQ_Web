@@ -99,8 +99,8 @@ body::before {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50vw;
-  height: 50vw;
+  width: 60vw;
+  height: 60vw;
   background-image: url('../assets/img/logo_isotipo.svg');
   background-repeat: no-repeat;
   background-position: center;
