@@ -91,6 +91,24 @@ body {
   background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50vw;
+  height: 50vw;
+  background-image: url('../assets/img/logo_isotipo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.08;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 img {
@@ -485,12 +503,12 @@ p:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 120px;
   transition: height 0.3s ease;
 }
 
 .header.is-scrolled .nav {
-  height: 64px;
+  height: 80px;
 }
 
 .nav__brand-logo {
@@ -501,12 +519,56 @@ p:last-child {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .nav__brand-logo {
+    gap: 16px;
+  }
+}
+
+.nav__brand-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-tech-blue);
+  text-transform: uppercase;
+  line-height: 1.2;
+  white-space: nowrap;
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .nav__brand-name {
+    font-size: 13px;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__brand-name {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__brand-name {
+    font-size: 18px;
+  }
 }
 
 .nav__brand-logo img {
-  height: 96px;
+  height: 80px;
   width: auto;
   transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .nav__brand-logo img {
+    height: 96px;
+  }
 }
 
 .header.is-scrolled .nav__brand-logo img {
@@ -568,23 +630,80 @@ p:last-child {
 }
 
 .header.is-scrolled .mobile-menu {
-  top: 64px;
+  top: 80px;
 }
 
-.mobile-menu.is-active {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.mobile-menu__list {
+/* 6. TECHNICAL PAGE LAYOUT
+   ========================================================================== */
+.tech-layout {
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
+  gap: var(--space-48);
 }
 
-/* 6. SECCIONES ESPECÍFICAS
+@media (min-width: 1024px) {
+  .tech-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 64px;
+  }
+
+  .tech-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .side-gallery {
+    width: 320px;
+    flex-shrink: 0;
+  }
+}
+
+.side-gallery__sticky {
+  position: sticky;
+  top: 140px;
+}
+
+.side-gallery__title {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-16);
+  padding-bottom: var(--space-8);
+  border-bottom: 2px solid var(--color-tech-blue);
+  letter-spacing: 0.5px;
+}
+
+.side-gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 1023px) {
+  .side-gallery__grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+.side-gallery__img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.side-gallery__img:hover {
+  transform: scale(1.04);
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 7. SECCIONES ESPECÍFICAS
    ========================================================================== */
 
 /* Hero */
@@ -748,14 +867,4 @@ p:last-child {
 }
 
 /* Stagger delay para grids */
-.reveal--delay-1 {
-  transition-delay: 0.1s;
-}
-
-.reveal--delay-2 {
-  transition-delay: 0.2s;
-}
-
-.reveal--delay-3 {
-  transition-delay: 0.3s;
-}
+.
